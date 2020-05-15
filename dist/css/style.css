@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    font-family: 'Exo', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+#resolution {
+    width:20%;
+    height: 20%;
+    position: absolute;
+    top:0;
+    left:10%;
+}
+#documentation {
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+}
+#documentation a{
+    color: black;
+}
+#cover{
+    width: 80%;
+    height: 73vh;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    z-index: 1;
+    
+}
+#cover img {
+    width: 100%;
+    height: 99vh;
+}
+#coverImage {
+    width: 100%;
+    height: 100vh;
+}
+#logo {
+    width: 20%;
+    height: 80px;
+    position: absolute;
+    top:0;
+    left:60%;
+    z-index: 1;
+}
+#logo img {
+    width: 100%;
+}
+#menu {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    z-index: 1;
+}
+#menu a {
+    color:black;
+}
+#menu2 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    z-index: 5;
+    color:white;
+    display:none;
+}
+#menu2 i {
+    color:white;
+    font-size: 29px;
+    float:left;
+    margin:39px 5px 0px 0px;
+}
+#menu2 h1 {
+    float:left;
+    font-family: 'Exo', sans-serif;
+    margin:32px 5px 0px 0px;
+}
+#menu i {
+    color:black;
+    font-size: 29px;
+    float:left;
+    margin:39px 5px 0px 0px;
+}
+#menu h1 {
+    float:left;
+    font-family: 'Exo', sans-serif;
+    margin:32px 5px 0px 0px;
+}
+#loading {
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color: grey;
+    opacity: 0.8;
+    display: block;
+}
+#logoLoading {
+    width:100px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left:47%;
+    z-index: 3;
+    vertical-align: middle;
+    opacity: 1;
+}
+#loading img {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+#sideMenu {
+    width: 16%;
+    height: 1080px;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 4;
+    background-color: #3d4142;
+}
+#sideMenu i {
+    margin-left: -10px;
+}
+#sideMenu ul {
+    width: 10%;
+    list-style-type: none;
+    color:white;
+    height: 300px;
+    margin:65% 0% 0% 10%;
+    z-index: 5;
+}
+#sideMenu ul li a {
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    font-family: 'Exo', sans-serif;
+    font-size: 22px;
+}
+#sideMenu ul li {
+    margin: 15px;
+}
+#prviSadrzaj {
+    width: 70%;
+    height: 78vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: lightslategrey;
+    margin-top:6%;
+    margin-left: -1400px;
+    opacity:0.9;
+    border:0.1px solid black;
+    border-radius: 3px;
+    
+}
+#drugiSadrzaj {
+    width: 70%;
+    height: 78vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color: lightslategrey;
+    margin-top:6%;
+    margin-left: -1400px;
+    opacity:0.9;
+    border:0.1px solid black;
+    border-radius: 3px;
+}
+#drugiSadrzaj h1, #treciSadrzaj h1,#cetvSadrzaj h1 {
+    font-size: 105px;
+    color:#b2d732;
+    margin:15px 0px 0px 30px;
+}
+#treciSadrzaj h1 {
+    margin-bottom: 30px;
+}
+#drugiSadrzaj span,#treciSadrzaj span,#cetvSadrzaj span {
+    color:white;
+}
+#drugiSadrzaj p{
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+#pictureAbout {
+    width: 25%;
+    height: 45%;
+    margin-left:20px;
+    margin-top: 20px;
+    float:left;
+}
+#pictureAbout h2, #pictureAbout p {
+    color:white;
+    text-align: center;
+}
+#pictureAbout img {
+    width: 100%;
+    height: 100%;
+    border: 0.01px solid black;
+    border-radius: 50%;
+    margin-top: 18%;
+}
+#stepsAbout {
+    width: 65%;
+    float:left;
+    height: 65%;
+    margin-left: 10px;
+    margin-top:30px;
+    
+}
+.steps {
+    width:23%;
+    height: 100%;
+    float:left;
+    margin-left: 2%;
+}
+.steps i {
+    color:white;
+    font-size: 100px;
+    margin-left: 50px;
+}
+#stepsAbout .steps p {
+    color:white;
+    width: 90%;
+    font-size: 18px;
+    margin-top: 2%;
+}
+#stepsAbout .steps .text {
+    color:#b2d732;
+    
+}
+
+#treciSadrzaj {
+    width: 70%;
+    height: 78vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color: lightslategrey;
+    margin-top:6%;
+    margin-left: -1400px;
+    opacity:0.9;
+    border:0.1px solid black;
+    border-radius: 3px;
+}
+#cetvSadrzaj {
+    width: 70%;
+    height: 78vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    background-color: lightslategrey;
+    margin-top:6%;
+    margin-left: -1400px;
+    opacity:0.9;
+    border:0.1px solid black;
+    border-radius: 3px;
+}
+#portfolioPics {
+    width: 95%;
+    height: 80%;
+    margin: 0px auto;
+}
+#portfolioPics .slika
+{
+	float:left;
+	width:33%;
+    margin-bottom: 3%;
+}
+#portfolioPics .slika img{
+	width:90%;
+	height:240px;
+    margin: 0px auto;
+    border: 0.1px solid white;
+    border-radius: 3px;
+}
+#contactLeft {
+    width: 45%;
+    height: 80%;
+    float: left;
+}
+#contactRight {
+    width: 55%;
+    height: 80%;
+    float: right;
+}
+input[type='text'], input[type='email'], textarea, select{
+	width:90%;
+	padding:5px 0px;
+	font-size:20px;
+    border: 0.001px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+input[type='button']{
+	width:90%;
+	background-color: #4FAF1E;
+	border:none;
+	padding:5px 0px;
+	font-size:20px;
+	color:#fff;	
+    margin-top: 15px;
+	
+}
+#contactLeft #tabela {
+    margin-left: 30px;
+}
+.nevidljiv {
+	display:none;
+    color: white;
+}
+.nevidljiv p{
+	font-size: 16px;
+}
+#contactLeft #tabela label {
+    color:white;
+    font-size: 16px;
+}
+#contactLeft #tabela #tdTagTag {
+    margin-top: 20px;
+    color:white;
+}
+input[type='checkbox']{
+    margin-left: 30px;
+    color:white;
+}
+#contactLeft #tabela th {
+    color:white;
+    font-size: 27px;
+}
+#contactLeft #tabela td {
+    width: 50%;
+}
+#contactRight h3,#contactRight h4  {
+    color:white;
+    font-size: 27px;
+}
+#mapa {
+    width: 93%;
+    height:60%;
+    background-color: green;
+    margin-top: 4%;
+}
